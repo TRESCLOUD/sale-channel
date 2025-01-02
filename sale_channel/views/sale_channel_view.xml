@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <form string="Sale Channel">
                 <sheet>
+                    <div class="oe_button_box" name="button_box" />
                     <widget
                         name="web_ribbon"
                         title="Archived"
@@ -18,6 +19,8 @@
                     </h1>
                     <group name="general_info" string="General information">
                         <field name="active" invisible="1" />
+                        <field name="channel_type" />
+                        <field name="company_id" groups="base.group_multi_company" />
                     </group>
                 </sheet>
             </form>
